@@ -30,7 +30,20 @@
           </div>
         </form>
   </main>
-  
-
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwDSk-yofPralQyubr3OEyugLXvnQh8gLa0OY2dPontlBewZeXMq3Z3nVCy3gKu7W9LPg/exec'
+		const form = document.forms['form']
+		
+		form.addEventListener('submit', e => {
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			  Swal.fire({
+	  title: 'شكرًا لك',
+	  icon: 'success',
+	  confirmButtonColor: '#0051b2',
+	  confirmButtonText: '<a href="https://web.telegram.org/a/#-1825728039">تم</a>' , 
+	})
+			})
+		  </script>
 </body>
 </html>
