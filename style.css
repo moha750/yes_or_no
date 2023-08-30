@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "b";
+  src: url("./RB\ Bold.ttf");
+}
+
+@font-face {
+  font-family: "r";
+  src: url("./RB\ Regular.ttf");
+}
+
+main {
+  height: 50vw;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  width: 18vw;
+}
+
+.title-1 {
+  font-family: r;
+  color: #0051B2;
+  font-size: 2vw;
+}
+
+.title-2 {
+  font-family: b;
+  color: #0051B2;
+  font-size: 1.5vw;
+}
+
+.img {
+  width: 20vw;
+  background-color: hsla(213, 100%, 35%, 0.2);
+  padding: 2vw 2vw 0vw 2vw;
+  border-radius: 2.5vw;
+}
+
+.choose {
+  display: flex;
+}
+
+.yes , .no {
+  margin: 0vw 5vw;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.7s;
+}
+
+.yes:hover , .no:hover {
+  border-radius: 2.5vw;
+  box-shadow: #0051B2 0px 1px 4px, #0051B2 0px 0px 0px 3px;
+  transition: all 0.7s;
+}
+
+.yes , .no p {
+  font-family: b;
+  color: white;
+  font-size: 1.5vw;
+  color: #0051B2;
+}
+
+.full-name {
+  background-color: hsla(213, 100%, 35%, 0.2);
+  border: 0.3vw solid #0051B2;
+  border-radius: 1vw;
+  margin: 2vw 0vw;
+  width: 20vw;
+  height: 2.5vw;
+  text-align: right;
+  color: #0051B2;
+  font-family: b;
+  padding: 0vw 1vw;
+  font-size: 1vw;
+}
