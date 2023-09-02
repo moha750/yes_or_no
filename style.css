@@ -27,19 +27,24 @@ main {
 }
 
 .logo {
-  width: 18vw;
+  width: 25vw;
 }
 
 .title-1 {
   font-family: r;
   color: #0051B2;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .title-2 {
   font-family: b;
   color: #0051B2;
-  font-size: 1.5vw;
+  font-size: 2vw;
+}
+
+.title-2 a {
+  text-decoration: none;
+  color: #0073ff;
 }
 
 .img {
